@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:hsl(0, 0%, 95%);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+}
+
+.card{
+    padding: 2.85rem;
+    width: 300px;  
+}
+
+h1,button {
+    color: hsl(0, 0%, 95%);
+}
+
+.card h1 {
+    margin:2rem 0;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.card p {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 5rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    line-height: 1.5rem;
+}
+
+button {
+    padding: 1rem 2rem;
+    font-family: 'Lexend Deca', sans-serif;
+    border: 0px;
+    outline: none;
+    border-radius: 2rem;
+}
+
+#card-1 {
+    background-color: hsl(31, 77%, 52%);
+    height: 32%;
+}
+
+#card-1 button {
+    color: hsl(31, 77%, 52%);
+}
+
+#card-2 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#card-2 button {
+    color: hsl(184, 100%, 22%);
+}
+
+
+#card-3 {
+    background-color: hsl(179, 100%, 13%);
+}
+
+#card-3 button {
+    color: hsl(179, 100%, 13%);
+}
+ 
+@media screen and (max-width:500px){
+   .container {
+       padding: 2rem 0;
+   }
+   #card-1 {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+   }
+
+   #card-3 {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+   }
+  
+}
+
+@media screen and (min-width:900px){
+    #card-1 {
+     border-top-left-radius: 0.5rem;
+     border-bottom-left-radius: 0.5rem;
+    }
+ 
+    #card-3 {
+     border-top-right-radius: 0.5rem;
+     border-bottom-right-radius: 0.5rem;
+    }
+}
+
+ .attribution {
+    font-size: 11px;
+    text-align: center;
+    min-height: 5vh;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
